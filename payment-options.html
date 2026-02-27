@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuks Kitchen - Payment Page</title>
+    <link rel="stylesheet" href="/css/allstyles.css">
+    <link rel="stylesheet" href="/css/allstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+</head>
+
+<body class="grey">
+    <header class="navbar" id="navbar-food">
+        <h1 class="brand-logo" id="brand-logo">Chuks Kitchen</h1>
+
+        <nav id="nav-links" class="laptop-only">
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">My Orders</a>
+            <a href="#">Account</a>
+            <button class="login-btn" onclick="window.location.href='index.html'">Login</button>
+        </nav>
+
+        <button class="menu-btn mobile-only" onclick="window.location.href='index.html'">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <div class="payment-container" id="payment-container">
+            <h1 id="heading">Payment</h1>
+            <hr id="divider">
+
+            <section class="payment-method">
+                <p class="section-label">Pay with..</p>
+                <div class="radio-group">
+                    <label class="radio-item">
+                        <input type="radio" name="pay-method" checked>
+                        <span class="custom-radio"></span> Card
+                    </label>
+                    <label class="radio-item">
+                        <input type="radio" name="pay-method">
+                        <span class="custom-radio"></span> Bank
+                    </label>
+                    <label class="radio-item">
+                        <input type="radio" name="pay-method">
+                        <span class="custom-radio"></span> Transfer
+                    </label>
+                </div>
+            </section>
+
+            <section class="card-details">
+                <div class="form-group">
+                    <label id="box-label">Card Number</label>
+                    <input type="text" placeholder="1234 5678 9101 1121" id="box-input">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label id="box-label">Exp. Date</label>
+                        <input type="text" placeholder="MM/YY" id="box-input">
+                    </div>
+                    <div class="form-group">
+                        <label id="box-label">CVV</label>
+                        <input type="text" placeholder="123" id="box-input">
+                    </div>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Save card details
+                </label>
+            </section>
+
+            <button class="btn-primary pay-btn">Pay ₦9,900</button>
+
+            <p class="privacy-note">
+                Your personal data will be used to process your order, support your experience throughout this website,
+                and for other purposes described in our privacy policy.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer laptop-only">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-logo-text">Chuks Kitchen</h2>
+                <p>Bringing the authentic<br> flavors of Nigerian<br> home cooking to your<br> table, with passion<br>
+                    and care.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>My Order</li>
+                    <li>Account</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>+234 801 234 5678</p>
+                <p>hello@chukskitchen.com</p>
+                <p>123 Taste Blvd, Lagos, Nigeriat</p>
+            </div>
+            <div class="footer-socials">
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Linkedin</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Chuks Kitchen. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

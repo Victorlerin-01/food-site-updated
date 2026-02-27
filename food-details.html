@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuks Kitchen - Food Details Page</title>
+    <link rel="stylesheet" href="/css/allstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+</head>
+
+<body class="grey-body">
+    <header class="navbar" id="navbar-food">
+        <h1 class="brand-logo" id="brand-logo">Chuks Kitchen</h1>
+
+        <nav id="nav-links" class="laptop-only">
+                <a href="#">Home</a>
+                <a href="#">Explore</a>
+                <a href="#">My Orders</a>
+                <a href="#">Account</a>
+                <button class="login-btn" onclick="window.location.href='payment-options.html'">Login</button>
+        </nav>
+
+        <button class="menu-btn mobile-only" onclick="window.location.href='payment-options.html'">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+            
+    </header>
+
+    <main class="food-flex">
+        <section class="product-hero">
+            <img src="/assets/images/rice-chicken.jpg" alt="Jollof Rice with Fried Chicken" class="hero-image">
+        </section>
+        <div class="body-food">
+            <section class="product-info">
+                <div class="title-row">
+                    <button class="close-btn" aria-label="Close">X</button>
+                    <h1>Jollof Rice with Fried Chicken</h1>
+                </div>
+
+                <p class="price">₦2,800</p>
+
+                <p class="description">
+                    Our signature Jollof rice, cooked to
+                    perfection with aromatic spices, served
+                    with juicy, golden-fried chicken.
+                    A classic Nigerian comfort food, rich in
+                    flavor and satisfying. Perfect for a quick
+                    lunch or a hearty dinner.</p>
+
+                <div class="tags-container">
+                    <span class="tag">Mildly spicy</span>
+                    <span class="tag special-tag">View Allergies</span>
+                    <span class="tag">Vegetarian option available</span>
+                </div>
+            </section>
+
+            <form action="#" method="POST" class="order-form">
+                
+                <fieldset class="input-group">
+                    <legend class="arial">Choose your Protein</legend>
+
+                    <label class="input-wrapper">
+                        <input type="radio" name="protein" value="fried-chicken" checked>
+                        <span class="label-text">Fried Chicken</span>
+                        <span class="price-add">(Default)</span>
+                    </label>
+
+                    <label class="input-wrapper">
+                        <input type="radio" name="protein" value="grilled-fish">
+                        <span class="label-text">Grilled Fish</span>
+                        <span class="price-add">+₦500</span>
+                    </label>
+
+                    <label class="input-wrapper">
+                        <input type="radio" name="protein" value="grilled-fish">
+                        <span class="label-text">Beef</span>
+                        <span class="price-add">+₦700</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="arial">Extra Sides (Optional)</legend>
+
+                    <label class="input-wrapper">
+                        <input type="checkbox" name="sides" value="plantain">
+                        <span class="label-text">Fried Plantain</span>
+                        <span class="price-add">+₦700</span>
+                    </label>
+
+                    <label class="input-wrapper">
+                        <input type="checkbox" name="sides" value="coleslaw">
+                        <span class="label-text">Coleslaw</span>
+                        <span class="price-add">+₦500</span>
+                    </label>
+
+                    <label class="input-wrapper">
+                        <input type="checkbox" name="sides" value="coleslaw">
+                        <span class="label-text">Extra Pepper Sauce</span>
+                        <span class="price-add">+₦300</span>
+                    </label>
+
+                </fieldset>
+
+                <div class="input-group">
+                    <legend class="arial">Special Instructions</legend>
+                    <textarea id="instructions" class="placeholder" rows="1"
+                        placeholder="E.g no onion, food is too spicy, food is too hot hhhhhhhh food is tasty"></textarea>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <footer class="site-footer laptop-only">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-logo-text">Chuks Kitchen</h2>
+                <p>Bringing the authentic<br> flavors of Nigerian<br> home cooking to your<br> table, with passion<br> and care.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul><li>Home</li><li>Explore</li><li>My Order</li><li>Account</li><li>Contact</li></ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>+234 801 234 5678</p>
+                <p>hello@chukskitchen.com</p>
+                <p>123 Taste Blvd, Lagos, Nigeriat</p>
+            </div>
+            <div class="footer-socials">
+                <p>Facebook</p><p>Twitter</p><p>Linkedin</p><p>Instagram</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Chuks Kitchen. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
