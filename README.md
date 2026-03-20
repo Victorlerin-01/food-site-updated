@@ -1,4 +1,5 @@
 Live link: https://famous-biscochitos-f95aeb.netlify.app/index.html
+Email: victoradeniyiayomide@gmail.com
 
 Chuks Kitchen (Static UI/UX)
 This is a 5-page static UI/UX project.
